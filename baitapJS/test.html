@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            border-radius: 40px;
+        }
+
+        .inbox {
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            position: absolute;
+            border-radius: 50%;
+            top: 5px;
+            right: calc(100% - 50px);
+
+        }
+
+        div .trai {
+            top: 5px;
+            left: 10px;
+            animation: trai 0.5s ease;
+        }
+
+        .phai {
+            top: 5px;
+            right: 10px;
+            animation: phai 0.5s;
+            animation-timing-function: ease;
+            background-color: orange;
+            transition: all 200ms;           
+        }
+        /* .inbox:active{    
+            background-color: orange;
+            right: 150px;
+
+
+        } */
+
+        @keyframes trai {
+            0% {
+                left: 150px;
+            }
+
+            100% {
+                left: 10px;
+            }
+
+        }
+
+        @keyframes phai {
+            0% {
+                right: 150px;
+            }
+
+            100% {
+                right: 10px;
+            }
+
+        }
+
+        button {
+            transform: translate(0, 60px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inbox">
+        </div>
+        <!-- <button id="dichuyen">phải</button> -->
+        <script>
+            document.getElementsByClassName("box")[0].onclick = function () {
+                if (document.getElementsByClassName("inbox")[0].classList.toggle("phai")) {
+                    document.getElementsByClassName("inbox")[0].classList.remove("trai")
+                } else {
+                    document.getElementsByClassName("inbox")[0].classList.toggle("trai")
+                }
+                // if (document.getElementById("dichuyen").innerHTML === "phải") {
+                //     document.getElementById("dichuyen").innerHTML = "trái"
+
+                // } else {
+                //     document.getElementById("dichuyen").innerHTML = "phải";
+                // }
+
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

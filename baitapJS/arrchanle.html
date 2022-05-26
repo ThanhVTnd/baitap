@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   
+</head>
+<body>
+   <script>
+       function chan_le(n){
+    
+
+    let flag = 1;
+    if( n % 2 == 0 ) flag= 0;
+    return flag;  
+}
+
+let arr = [0,1,2,3,4,5,6,7,8,9];
+
+
+let arrle = [];
+let arrchan = [];
+
+
+
+for (let i = 0; i < arr.length; i++){
+    if (chan_le(arr[i]) == 0)  arrchan.push(arr[i]);
+    else  arrle.push(arr[i])
+}
+
+console.log(arrle);
+console.log(arrchan);
+   </script>
+</body>
+</html>

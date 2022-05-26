@@ -1,0 +1,15 @@
+.time{
+    width: 250px;
+    height: 70px;
+    border: 1px solid rgb(236, 183, 84) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-item-left{
+    margin-top: 50px;
+    transform: translate(21px,0);
+}
+.line-blog{
+    border-right: 1px solid rgb(236, 183, 84);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #doimau1 {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #do {
+            width: 300px;
+            height: 300px;
+            
+        }
+
+        #xanh {
+            width: 300px;
+            height: 300px;
+            
+        }
+        .blue{
+            background-color: blue
+        }
+        .red{
+            background-color: red;
+        }
+        .box1{
+            background-color: red;
+            
+        }
+        .box2{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="doimau1">
+        <div id="do" class="blue box1 "></div>
+        <div id="xanh" class="box2 red"></div>
+
+    </div>
+    <button id="doimau">đổi màu</button>
+    <script>
+
+        document.getElementById("doimau").addEventListener("click", function () {
+            document.getElementById("do").classList.toggle("box1")
+            document.getElementById("xanh").classList.toggle("box2")
+            
+
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .frame {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      height: 300px;
+      margin: 0 auto;
+      position: relative;
+      background-color:#ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .box1{
+      background-color: black;
+    
+      width: 100px;
+      height: 100px;
+      
+      
+     
+
+    }
+    .box2{
+      background-color: beige;
+      transform: rotate(45deg);
+      z-index: 2;
+      top: -141.4px;
+      
+    }
+    #box{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color:#ccc;
+      
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      animation: loading 1s infinite linear;
+      
+      
+    }
+    .box3{
+     
+      background-color: aqua;
+      z-index: 3;
+      left: 100px;
+      bottom: 100px;
+    }
+    .box4{
+      background-color: blue;
+      z-index: 4;
+      transform: rotate(45deg);
+      left: 141.4px;
+      
+
+    }
+    .box5{
+      background-color: yellowgreen;
+      z-index: 5;
+      top: 100px;
+      left: 100px;
+    }
+    .box6{
+      background-color: brown;
+      z-index: 6;
+      transform: rotate(45deg);
+      top: 141.4px;
+      
+    }
+    .box7{
+      background-color: green;
+      z-index: 7;
+      top: 100px;
+      right: 100px;
+      
+    }
+    .box8{
+      position: absolute;
+      background-color: chocolate;
+      transform: rotate(45deg);
+      right: 141.4px;
+      width: 100px;
+      height: 100px;
+      top: 50px;
+      left: -20px;
+    }
+    .box2,.box3,.box4,.box5,.box6,.box7{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+    }
+    .box18{
+      width: 100px;
+      height: 100px;
+      z-index: 10;
+      position: relative;
+      position: absolute;
+      transform: rotate(-45deg);
+      top: 50px;
+      left: -20px;
+      overflow: hidden;
+    }
+    
+    @keyframes loading {
+      0%{
+        transform: rotate(360deg);
+      }
+      
+    }
+    /* Go CSS vao day */
+  </style>
+</head>
+
+<body>
+<div class="frame">
+<!-- Go HTML vao day -->
+  <div id="box">
+     
+     <div class="box2"></div>
+     <div class="box3"></div>
+     <div class="box4"></div>
+     <div class="box5"></div>
+     <div class="box6"></div>
+     <div class="box7"></div>
+     
+     <div class="box18">
+      
+      <div class="box1"></div>
+      <div class="box8"></div>
+
+     </div>
+     
+  </div>
+
+</div>
+
+</body>
+
+</html>

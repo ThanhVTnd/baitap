@@ -1,0 +1,75 @@
+i{
+    color: rgb(182, 179, 179);
+    padding-left: 15px;
+}
+
+i:hover{
+    color: rgb(236, 183, 84);
+}
+li{
+    list-style-type: none;
+}.inmenu{
+    padding-left: 30px;
+}
+.menuicon{
+    margin-top: 30px;
+}
+.limenu{
+    padding-left: 30px;
+}
+.limenu{
+   stop-color: aqua;
+}
+.banner{
+    margin-top: 80px;
+}
+.container.banner{
+     background-image: url(/images/slider-bg.png);
+background-size: contain;
+background-repeat: repeat-x;
+}
+
+.banner {
+    background: #fff url("/images/slider-bg.png") bottom left repeat-x;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.menu-top .nav-link {
+    color: grey;
+}
+.menu-top.nav-pills .nav-link.active, .menu-top.nav-pills .show>.nav-link {
+    color: #dab074;
+    background-color: transparent;
+}
+#social-icons {
+    text-align: right;
+    margin: 15px 0 10px;
+}
+
+.img-wrap {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.img-wrap img {
+    position: absolute;
+}
+
+.img-house {
+    bottom: 0;
+    left: 30%;
+}
+.img-cycle {
+    bottom:0;
+    left:0;
+}
+.img-circle1 {
+    left:20px;
+    top:100px;
+}
+.img-cloud1 {
+    left:200px;
+    top:200px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .C006 {
+            background-color: #6582cf;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .mai {
+            width: 0;
+            height: 0;
+
+            border-bottom: 100px solid #243d83;
+            border-top: 0 solid transparent;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            position: relative;
+            top: 35px;
+
+
+        }
+
+        .nha {
+            width: 140px;
+            height: 110px;
+            background-color: #243d83;
+            overflow: hidden;
+            border-radius: 0 0 15px 15px;
+            
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            bottom: 55px;
+
+        }
+
+        .cua {
+            width: 50px;
+            height: 70px;
+            background-color: #EEB850;
+            position: absolute;
+            border-radius: 10px;
+            left: 50%;
+            
+            transform: translate(-50%,60px);
+        }
+
+        .cuaso {
+            width: 80px;
+            height: 10px;
+            background-color: #EEB850;
+            
+            border-radius: 5px;
+            position: absolute;
+            /* left: 30px; */
+            transform: translateX(40%);
+            top: 10px;
+        }
+        .den{
+            background-color: black !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="C006">
+        <div style="position: relative;">
+            <div class="mai"></div>
+            <div class="nha">
+                <div class="cua"></div>
+                <div class="cuaso"></div>
+            </div>
+            
+        </div>
+        
+
+
+
+
+    </div>
+    <button id="tatden">tatden</button>
+    
+    <script>
+        document.getElementById("tatden").onclick = function(){
+            document.getElementsByClassName("cua")[0].classList.toggle("den")
+            document.getElementsByClassName("cuaso")[0].classList.toggle("den")
+            
+        
+        console.log(document.getElementById("tatden").innerHTML)
+        if(document.getElementById("tatden").innerHTML === "tatden"){
+            document.getElementById("tatden").innerHTML = "batden"
+            
+        }else {
+            document.getElementById("tatden").innerHTML = "tatden";
+        }
+    }
+
+
+    </script>
+   
+</body>
+
+</html>

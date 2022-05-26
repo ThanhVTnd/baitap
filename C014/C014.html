@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .frame {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      height: 300px;
+      margin: 0 auto;
+      position: relative;
+      background-color:#ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .box1{
+      background-color: black;
+      
+      
+
+    }
+    .box2{
+      background-color: beige;
+      
+    }
+    #box{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color:#ccc;
+      
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      /* animation: loading 1s infinite linear; */
+      
+    }
+    .box3{
+     
+      background-color: aqua;
+    }
+    .box1,.box2,.box3{
+      width: 50%;
+      height: 50%;
+    }
+    @keyframes loading {
+      0%{
+        transform: rotate(360deg);
+      }
+      
+    }
+    /* Go CSS vao day */
+  </style>
+</head>
+
+<body>
+<div class="frame">
+<!-- Go HTML vao day -->
+  <div id="box">
+     <div class="box1"></div>
+     <div class="box2"></div>
+     <div class="box3"></div>
+  </div>
+
+</div>
+
+</body>
+
+</html>
