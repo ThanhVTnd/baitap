@@ -91,7 +91,7 @@
     <div class="container">
         <div class="d-flex justify-content-center"><div class="time"><h4>NOVEMBER 2013</h4></div></div>
     
-        <div class="row">
+        <div class="row" id="blog2">
             <div class="col-6 line-blog">
                 <div class="row card-item-left">
                     <div class="col">
@@ -112,6 +112,31 @@
                         <img src="images/left.png" alt="">
                     </div>
                 </div>
+                
+            </div>
+            <div class="col-6">
+                <div class="row card-item-right">
+                    <div class="col">
+                        <img src="images/right.png" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 35rem;">
+                            <img src="images/timeline/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              
+                            </ul>
+                            
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-6 line-blog">
                 <div class="row card-item-left">
                     <div class="col">
                         <div class="card" style="width: 35rem;">
@@ -136,10 +161,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-
-            </div>
         </div>
+        <div class="d-flex justify-content-center"><div class="time"><h4>NOVEMBER 2013</h4></div></div>
     </div>
     <div class="bg-footer"></div>
     <div class="footer">
@@ -214,8 +237,81 @@
             <p>Designed by <a href="http://#">ThanhVu</a></p>
         </div>
     </div>
+    
+    <script>
+        let data = [
+    {
+        image: "images/1.jpg",
+        title: "Tiêu đề bài viết 01",
+        author: "Thanh",
+        short_content: "Lorem 1",
+        content: "full content 1 ",
+        tags: ["Create", "News"],
+        likes: 12,
+        comments: 20,
+        url: "blog-detail.html",
+        date: "FEB 14"
+    },
+    {
+        image: "images/2.jpg",
+        title: "Tiêu đề bài viết 02",
+        author: "Thanh",
+        short_content: "Lorem 2",
+        content: "full content 2Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum repudiandae eos, itaque enim sed eius vero veritatis est quo aperiam incidunt perspiciatis debitis. Fugiat consequatur sint repudiandae est voluptas.",
+        tags: ["Create"],
+        likes: 2,
+        comments: 10,
+        url: "blog-detail.html",
+        date: "JAN 22"
+    },
+    {
+        image: "images/project1.jpg",
+        title: "Tiêu đề bài viết 03",
+        author: "Thanh",
+        short_content: "Lorem 3",
+        content: "full content 2",
+        tags: ["Create", "News", "Blog"], // Creative, News, Blog
+        likes: 120,
+        comments: 30,
+        url: "blog-detail.html",
+        date: "APR 15"
+    }
+];
+
+        let cardItem = ''
+        for( let i=0; i <data.length; i++){
+            let di = 'left';
+            if (i % 2 !== 0) di ='right';
+            cardItem += `<div class="col-6 card-item-${di} px-0 m-0">
+                
+                    
+                        <div class="card" style="width: 35rem;">
+                            <img src="images/timeline/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.${data[i].content}</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              
+                            </ul>
+                            
+                          </div>
+                   
+                          <div><img src="images/${di}.png" alt="">
+                            </div>
+                        
+                    
+               
+                
+            </div>`
+
+        }
+        document.getElementById("blog2").innerHTML = cardItem
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 </body>
 </html>

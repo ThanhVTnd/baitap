@@ -8,8 +8,27 @@
 }
 .card-item-left{
     margin-top: 50px;
-    transform: translate(21px,0);
-}
-.line-blog{
+    /* transform: translate(21px,0); */
     border-right: 1px solid rgb(236, 183, 84);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.card-item-right{
+    padding-top: 130px;
+    /* transform: translateX(-13px); */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+   
+    
+}
+.card-item-left img{
+    transform: translateX(1px);
+}
+.card-item-right img{
+    transform: translateX(-1px);
 }
