@@ -95,6 +95,22 @@
                 // }
 
             }
+            let a = [
+                ['1','2','3'],
+                ['3','2','1'],
+                ['4','5','6']
+
+
+            ]
+            let result = ""
+            for (let i = 0;i <a.length; i++){
+                for (let j = 0;j<a[i].length; j++){
+                    result += a[i][j] + ",";
+                }
+            }
+            
+            result = result.substring(0,result.length-1)
+            console.log(result)
         </script>
 
     </div>
